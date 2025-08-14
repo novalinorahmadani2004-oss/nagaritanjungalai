@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Loading Screen Fullscreen */
+#loading-screen {
+    position: fixed;
+    /*menutupilayar*/top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('loading.jpg') no-repeat center center;
+    background-size: cover;
+    /*agargambarpenuhdanproporsional*/z-index: 9999;
+    /*palingdepan*/transition: opacity 1.5 ease, visibility 1.5 ease;
+    -webkit-transition: opacity 0.8s ease, visibility 0.8s ease;
+    -moz-transition: opacity 0.8s ease, visibility 0.8s ease;
+    -ms-transition: opacity 0.8s ease, visibility 0.8s ease;
+    -o-transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+/* Efek fade out saat hilang */
+#loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Biar pas memenuhi layar */
+    z-index: -1; /* Di belakang konten */
+}
+
+/* Konten di atas video */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-40%);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Efek transparan agar teks lebih jelas */
+    border-radius: 10px;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.judul-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Biar posisinya tetap di tengah */
+    gap: 15px; /* Jarak antara logo dan teks */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.judul-header .logo {
+    width: 80px;  /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+.judul-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
