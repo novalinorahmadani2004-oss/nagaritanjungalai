@@ -79,6 +79,15 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       margin: 20px auto;
     }
+
+    .content {
+    display: inline-block; /* Biar background hanya seluas teks */
+    background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
+    padding: 15px 25px; /* Jarak teks ke pinggir */
+    border-radius: 8px; /* Sudut melengkung */
+    color: white; /* Warna teks */
+    font-family: 'Segoe UI', sans-serif;
+}
     .judul-header {
       margin-bottom: 2rem;
     }
@@ -200,6 +209,10 @@
     <button class="nav-toggle" aria-label="Toggle Navigation">
       ☰
     </button>
+    <div class="content">
+    <h1>Selamat Datang di Website</h1>
+    <p>Ini adalah teks di atas background.</p>
+    </div>
     <div class="nav-links">
       <a href="NA.html">Persyaratan Pembuatan N.A</a>
       <a href="kk.html">Persyaratan Penerbitan Kartu Keluarga (KK)</a>
@@ -259,4 +272,5 @@
   </div>
 </footer>
 </body>
+
 </html>
